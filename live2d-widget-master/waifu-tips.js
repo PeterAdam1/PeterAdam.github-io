@@ -186,21 +186,21 @@ function loadWidget(config) {
 		}
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath).then(response => response.json()).then(result => {
-				// window.addEventListener("mouseover", event => {
-				// 	for (let { selector, text } of result.mouseover) {
-				// 		if (!event.target.matches(selector)) continue;
-				// 		text = randomSelection(text);
-				// 		text = text.replace("{text}", event.target.innerText);
-				// 		showMessage(text, 4000, 8);
-				// 		return;
-				// 	}
-				// });
+				document.getElementById('waifu').addEventListener("mouseover", event => {
+					for (let { selector, text } of result.mouseover) {
+						if (!event.target.matches(selector)) continue;
+						text = randomSelection(text);
+						text = text.replace("{text}", event.target.innerText);
+						showMessage(text, 4000, 8);
+						return;
+					}
+				});
 				window.addEventListener("click", event => {
 					for (let { selector, text } of result.click) {
 						if (!event.target.matches(selector)) continue;
 						text = randomSelection(text);
 						text = text.replace("{text}", event.target.innerText);
-						showMessage(text, 4000, 8);
+						showMessage(text, 2000, 10);
 						return;
 					}
 				});
