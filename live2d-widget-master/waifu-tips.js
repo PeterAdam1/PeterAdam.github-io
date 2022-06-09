@@ -191,7 +191,7 @@ function loadWidget(config) {
 						if (!event.target.matches(selector)) continue;
 						text = randomSelection(text);
 						text = text.replace("{text}", event.target.innerText);
-						showMessage(text, 4000, 8);
+						showMessage(text, 4000, 10);
 						return;
 					}
 				});
