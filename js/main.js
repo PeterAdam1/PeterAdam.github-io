@@ -277,10 +277,12 @@ thumbsUp.onclick = function(){
                         ThumbsUpBox.style.right = "12%";
                     }
                     if(timer1 === 21){
+                        ThumbsUpBox.style.pointerEvents = "none";
                         ThumbsUpBox.style.transition = "0.5s";
                         ThumbsUpBox.style.right = "-500%";
                     }
                     if(timer1 === 28){
+                        ThumbsUpBox.style.pointerEvents = "none";
                         var script = document.createElement("script");
                         script.type = "text/javascript";
                         script.src = "live2d-widget-master/autoload.js";
