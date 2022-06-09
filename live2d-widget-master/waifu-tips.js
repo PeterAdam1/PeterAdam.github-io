@@ -195,7 +195,7 @@ function loadWidget(config) {
 						return;
 					}
 				});
-				window.addEventListener("click", event => {
+				document.getElementById('waifu').addEventListener("click", event => {
 					for (let { selector, text } of result.click) {
 						if (!event.target.matches(selector)) continue;
 						text = randomSelection(text);
