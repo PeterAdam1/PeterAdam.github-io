@@ -164,10 +164,10 @@ function loadWidget(config) {
 	// 检测音乐播放并显示消息
 	bgmPlayer.addEventListener("playing", function(){
 		var isBgmPlayingMessage = "正在播放：" + musicSource[musicIndex];
-		showMessage(isBgmPlayingMessage, 3000, 9);
+		showMessage(isBgmPlayingMessage, 3000, 10);
 	});
 	bgmPlayer.addEventListener("pause" ,function(){
-		showMessage("暂停播放", 3000, 9);
+		showMessage("暂停播放", 3000, 10);
 	});
 
 	const timeToExamAndTimeFromGraduate = document.getElementById('timeToExamAndTimeFromGraduate');
