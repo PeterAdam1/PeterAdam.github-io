@@ -186,7 +186,7 @@ function loadWidget(config) {
 		}
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath).then(response => response.json()).then(result => {
-				document.getElementById('waifu').addEventListener("mouseover", event => {
+				document.getElementById('waifu-tool').addEventListener("mouseover", event => {
 					for (let { selector, text } of result.mouseover) {
 						if (!event.target.matches(selector)) continue;
 						text = randomSelection(text);
